@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firestore Pagination</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container"></div>
+  <div class="loading">loading data...</div>
+
+  <div class="load-more">
+    <button>Load More</button>
+  </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCLSTQZIoQymddAHopLYiEl-8IddZ1ixhE",
+    authDomain: "blog-react-c7311.firebaseapp.com",
+    databaseURL: "https://blog-react-c7311.firebaseio.com",
+    projectId: "blog-react-c7311",
+    storageBucket: "blog-react-c7311.appspot.com",
+    messagingSenderId: "720154041555",
+    appId: "1:720154041555:web:957e27740d3b21be778826"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+  <script src="index.js"></script>
+</body>
+</html>
